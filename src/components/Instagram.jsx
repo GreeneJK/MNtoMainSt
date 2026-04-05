@@ -1,15 +1,3 @@
-const posts = [
-  { emoji: '🏰', label: 'Magic Kingdom' },
-  { emoji: '🎡', label: 'Epcot' },
-  { emoji: '🌟', label: 'Hollywood Studios' },
-  { emoji: '🦁', label: 'Animal Kingdom' },
-  { emoji: '🍽️', label: 'Dining Tips' },
-  { emoji: '✨', label: 'Trip Tips' },
-  { emoji: '🎆', label: 'Fireworks' },
-  { emoji: '👨‍👩‍👧‍👦', label: 'Family Fun' },
-  { emoji: '🛳️', label: 'Disney Cruise' },
-]
-
 export default function Instagram() {
   return (
     <section className="instagram-section" id="instagram">
@@ -20,24 +8,10 @@ export default function Instagram() {
           <div className="ig-handle">@mistymousemagic</div>
         </div>
 
-        {/* Instagram embed placeholder — replace with Elfsight/SnapWidget embed code */}
-        <div className="ig-grid fade-in">
-          {posts.map((post, i) => (
-            <a
-              key={i}
-              className="ig-post"
-              href="https://instagram.com/mistymousemagic"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`View ${post.label} post on Instagram`}
-            >
-              <div className="ig-placeholder-content">
-                <div className="ig-emoji">{post.emoji}</div>
-                <div className="ig-label">{post.label}</div>
-              </div>
-              <div className="ig-overlay">❤️</div>
-            </a>
-          ))}
+        {/* Elfsight Instagram Feed | Untitled Instagram Feed */}
+        <div className="ig-embed-wrap fade-in">
+          <script src="https://elfsightcdn.com/platform.js" async></script>
+          <div className="elfsight-app-8fe69861-16df-4fa2-9472-fa5b891f1d99" data-elfsight-app-lazy></div>
         </div>
 
         <div className="ig-footer fade-in">
