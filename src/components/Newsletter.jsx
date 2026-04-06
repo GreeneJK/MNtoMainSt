@@ -47,11 +47,11 @@ export default function Newsletter() {
 
         <div className="perks-grid fade-in">
           {perks.map((perk, i) => (
-            <div className="perk-card" key={i}>
+            <a href="#signup" className="perk-card" key={i}>
               <div className="perk-icon">{perk.icon}</div>
               <h3>{perk.title}</h3>
               <p>{perk.desc}</p>
-            </div>
+            </a>
           ))}
         </div>
 
