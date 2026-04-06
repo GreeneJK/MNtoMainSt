@@ -51,6 +51,11 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          {/* Planner Photo */}
+          <div className="about-photo-side fade-in fade-in-delay-2">
+            <img src="/misty-chef-mickey.png" alt="Misty with Chef Mickey at Walt Disney World" />
+          </div>
         </div>
       </div>
     </section>
