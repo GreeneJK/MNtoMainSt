@@ -92,22 +92,22 @@ p  { line-height: 1.7; color: var(--gray-600); font-size: 1.05rem; }
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   transition: background 0.4s ease, box-shadow 0.4s ease, padding 0.3s ease;
-  padding: 22px 0;
+  padding: 18px 0;
 }
 .nav.scrolled {
   background: rgba(27,42,74,0.97);
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 20px rgba(0,0,0,0.2);
-  padding: 14px 0;
+  padding: 12px 0;
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; }
-.nav-logo { display: flex; align-items: center; gap: 10px; }
-.nav-logo-mark { height: 42px; width: 42px; flex-shrink: 0; display: block; border-radius: 50%; object-fit: cover; }
-.nav-logo-text { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--white); line-height: 1.25; }
-.nav-logo-text span { display: block; font-size: 0.65rem; font-weight: 400; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; font-family: 'Nunito', sans-serif; }
-.nav-links { display: flex; align-items: center; gap: 32px; }
-.nav-links a { color: rgba(255,255,255,0.85); font-size: 0.9rem; font-weight: 600; transition: color var(--transition); }
-.nav-links a:hover { color: var(--gold); }
+.nav-logo { display: flex; align-items: center; gap: 14px; }
+.nav-logo-mark { height: 84px; width: 84px; flex-shrink: 0; display: block; border-radius: 50%; object-fit: cover; }
+.nav-logo-text { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600; color: var(--white); line-height: 1.25; }
+.nav-logo-text span { display: block; font-size: 0.7rem; font-weight: 400; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; font-family: 'Nunito', sans-serif; }
+.nav-links { display: flex; align-items: center; gap: 8px; }
+.nav-links a { color: rgba(255,255,255,0.85); font-size: 0.9rem; font-weight: 600; transition: color var(--transition); padding: 10px 16px; border-radius: 8px; }
+.nav-links a:hover { color: var(--gold); background: rgba(255,255,255,0.08); }
 .nav-cta { display: flex; align-items: center; gap: 12px; }
 .nav-cta .btn { padding: 10px 22px; font-size: 0.9rem; }
 .hamburger { display: none; background: none; flex-direction: column; gap: 5px; padding: 4px; }
