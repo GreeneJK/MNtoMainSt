@@ -3,7 +3,7 @@ export default function ConsultationCTA() {
     <section className="cta-section" id="consultation">
       <div className="container">
         <div className="cta-inner fade-in">
-          <span className="cta-icon" role="img" aria-label="castle">&#x1F3F0;</span>
+          <img src="/misty-chef-mickey.png" alt="Misty" className="cta-chef-mickey" />
           <h2 style={{ color: 'var(--off-white)' }}>
             Ready to Plan Your<br />
             <em style={{ color: 'var(--gold)' }}>Dream Disney Vacation?</em>
@@ -14,7 +14,7 @@ export default function ConsultationCTA() {
             you a custom plan at absolutely no cost.
           </p>
           <div className="cta-buttons">
-            <a href="mailto:hello@mntomainstreet.com" className="btn-gold">
+            <a href="https://traveljoy.com/webforms/aCkdfH8UHZYBzY9sM978xh4n/forms/96wmRtUjBSVWtGwEMAt9v7wi/link" target="_blank" rel="noopener noreferrer" className="btn-gold">
               &#x1F4C5; Book My Free Consultation
             </a>
             <a href="#signup" className="btn btn-outline btn-lg">
