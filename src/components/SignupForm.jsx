@@ -24,6 +24,10 @@ export default function SignupForm() {
     await new Promise(r => setTimeout(r, 800))
     setLoading(false)
     setSubmitted(true)
+    // Fire Facebook Pixel Lead event on successful signup
+    if (typeof window.fbq === 'function') {
+      fbq('track', 'Lead', { content_name: 'Newsletter Signup' })
+    }
   }
 
   return (
