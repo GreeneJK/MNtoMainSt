@@ -31,7 +31,7 @@ export default function Testimonials() {
       <div className="container">
         <div className="section-head text-center fade-in">
           <div className="section-label" style={{ justifyContent: 'center' }}>Client Love</div>
-          <h2 style={{ color: 'var(--navy)' }}>What Minnesota Families Are Saying</h2>
+          <h2 style={{ color: 'var(--navy)' }}>What Rochester &amp; SE Minnesota Families Are Saying</h2>
         </div>
 
         <div className="testimonials-grid">

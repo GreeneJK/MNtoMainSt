@@ -85,12 +85,13 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-badge">
             <div className="dot" />
-            Authorized Disney Vacation Planner &#183; Rochester, MN
+            Authorized Disney Vacation Planner &#183; Rochester, MN &#183; Serving the Med City &amp; Hwy 52 Corridor
           </div>
-          <h1>Plan Your <em>Perfect</em> Disney Vacation<br />Without the Stress</h1>
+          <h1>Rochester's <em>Disney Expert</em> &mdash; Free Vacation Planning for SE Minnesota Families</h1>
           <p className="hero-sub">
-            Expert Disney trip planning from a Minnesota local who lives and breathes the magic.
-            Monthly insider tips, exclusive strategies, and free personal consultations.
+            Rochester, MN's own Authorized Disney Vacation Planner. 100+ SE Minnesota families
+            helped plan stress-free Disney World, Disneyland &amp; Cruise vacations &mdash; plus
+            your guide to 2026 Disney events near the Med City.
           </p>
           <div className="hero-ctas">
             <a href="#signup" className="btn btn-primary btn-lg">
@@ -106,7 +107,7 @@ export default function Hero() {
       <div className="hero-stats">
         <div className="hero-stat">
           <div className="hero-stat-num">100+</div>
-          <div className="hero-stat-label">Families Helped</div>
+          <div className="hero-stat-label">SE MN Families Helped</div>
         </div>
         <div className="hero-stat">
           <div className="hero-stat-num">20+</div>
@@ -117,8 +118,8 @@ export default function Hero() {
           <div className="hero-stat-label">Consultation</div>
         </div>
         <div className="hero-stat">
-          <div className="hero-stat-num">&#x2726;</div>
-          <div className="hero-stat-label">Authorized Planner</div>
+          <div className="hero-stat-num">3</div>
+          <div className="hero-stat-label">2026 Disney Events</div>
         </div>
       </div>
 

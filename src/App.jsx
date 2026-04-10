@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import TrustBar from './components/TrustBar'
@@ -8,8 +9,9 @@ import SignupForm from './components/SignupForm'
 import Testimonials from './components/Testimonials'
 import ConsultationCTA from './components/ConsultationCTA'
 import Footer from './components/Footer'
+import TravelLanding from './components/TravelLanding'
 
-export default function App() {
+function HomePage() {
   // Scroll progress bar
   useEffect(() => {
     const bar = document.getElementById('progressBar')
@@ -47,5 +49,14 @@ export default function App() {
       </main>
       <Footer />
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/travel" element={<TravelLanding />} />
+    </Routes>
   )
 }

@@ -6,10 +6,10 @@ export default function Footer() {
           <div className="footer-brand">
             <h3>Minnesota to Main Street</h3>
             <p>
-              Expert Disney vacation planning from Rochester, MN.
-              Authorized Disney Vacation Planner helping SE Minnesota
-              families create magical, stress-free Disney trips &mdash;
-              at absolutely no cost to you.
+              Rochester, MN's Authorized Disney Vacation Planner &mdash;
+              helping SE Minnesota families plan magical, stress-free
+              Disney World, Disneyland &amp; Cruise vacations at
+              absolutely no cost to you.
             </p>
             <div className="footer-socials">
               <a href="https://instagram.com/mistymousemagic" target="_blank" rel="noopener noreferrer" className="social-btn" title="Follow @mistymousemagic on Instagram">
@@ -53,6 +53,11 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="footer-service-area">
+          <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', lineHeight: '1.6', textAlign: 'center', margin: '0 0 24px' }}>
+            Serving Rochester, Byron, Stewartville, Chatfield, Kasson, Pine Island, Owatonna, Winona, Austin, Albert Lea, and all of Southeast Minnesota.
+          </p>
+        </div>
         <div className="footer-bottom">
           <div>&#169; 2026 Minnesota to Main Street &#183; Rochester, MN &#183; All rights reserved.</div>
           <div className="footer-badge">&#x1F3F0; Authorized Disney Vacation Planner</div>
