@@ -103,7 +103,7 @@ export default function SignupForm() {
               <div className="success-check">&#x2713;</div>
               <h3>Welcome to the Magic! &#x2728;</h3>
               <p>
-                You're in! Check your inbox for a welcome email from<br />
+                You're in! Our next Disney planning briefing is headed to your inbox from<br />
                 <strong>Misty | Minnesota to Main Street</strong>.
               </p>
               <div className="tag">&#x1F3F0; You're officially part of the crew</div>

@@ -205,7 +205,7 @@ export default function TravelLanding() {
                 <div className="tl-signup-success show">
                   <div className="tl-success-check"><i className="fa-solid fa-check" /></div>
                   <h3>You're In! Here's Your Guide.</h3>
-                  <p>Check your inbox for a welcome email from MN to Main Street. In the meantime, grab your guide right now:</p>
+                  <p>Your guide is ready. Grab it right now:</p>
                   <a href={PDF_DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="tl-download-btn">
                     <i className="fa-solid fa-file-pdf" /> Download the PDF
                   </a>
