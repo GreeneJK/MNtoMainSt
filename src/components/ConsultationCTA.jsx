@@ -3,7 +3,7 @@ export default function ConsultationCTA() {
     <section className="cta-section" id="consultation">
       <div className="container">
         <div className="cta-inner fade-in">
-          <img src="/misty-chef-mickey.png" alt="Misty" className="cta-chef-mickey" />
+          <img src="/misty-chef-mickey.png" alt="Misty, Rochester MN Authorized Disney Vacation Planner, with Chef Mickey at Walt Disney World" className="cta-chef-mickey" />
           <h2 style={{ color: 'var(--off-white)' }}>
             Ready to Plan Your<br />
             <em style={{ color: 'var(--gold)' }}>Dream Disney Vacation?</em>

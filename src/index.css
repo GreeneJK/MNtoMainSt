@@ -396,6 +396,29 @@ p  { line-height: 1.7; color: var(--gray-600); font-size: 1.05rem; }
 .author-name { font-weight: 700; font-size: 0.9rem; color: var(--navy); }
 .author-meta { font-size: 0.78rem; color: var(--gray-600); }
 
+/* --- FAQ ----------------------------------------------------------- */
+.faq { padding: 90px 0; background: var(--off-white); }
+.faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+.faq-item {
+  background: var(--white); border: 1px solid var(--gray-100);
+  border-left: 3px solid var(--gold); border-radius: var(--radius);
+  padding: 4px 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: box-shadow var(--transition);
+}
+.faq-item[open] { box-shadow: var(--shadow); }
+.faq-question {
+  font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600;
+  color: var(--navy); cursor: pointer; list-style: none;
+  padding: 18px 32px 18px 0; position: relative; line-height: 1.35;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::after {
+  content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+  font-size: 1.6rem; font-weight: 400; color: var(--gold); transition: transform var(--transition);
+}
+.faq-item[open] .faq-question::after { content: '\2013'; }
+.faq-answer { color: var(--gray-600); font-size: 0.98rem; line-height: 1.7; padding: 0 0 20px; margin: 0; }
+
 /* --- CTA Section -------------------------------------------------- */
 .cta-section {
   padding: 100px 0;
