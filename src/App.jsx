@@ -7,6 +7,7 @@ import About from './components/About'
 import Newsletter from './components/Newsletter'
 import SignupForm from './components/SignupForm'
 import Testimonials from './components/Testimonials'
+import FAQ from './components/FAQ'
 import ConsultationCTA from './components/ConsultationCTA'
 import Footer from './components/Footer'
 import TravelLanding from './components/TravelLanding'
@@ -45,6 +46,7 @@ function HomePage() {
         <Newsletter />
         <SignupForm />
         <Testimonials />
+        <FAQ />
         <ConsultationCTA />
       </main>
       <Footer />
