@@ -6,24 +6,24 @@ export default async function handler(req, res) {
   if (!email) return res.status(400).json({ error: 'Email is required' })
 
   try {
-    const response = await fetch(
-      'https://api.beehiiv.com/v2/publications/pub_293bbd67-75cb-4f03-9f96-f972e0ee57cf/subscriptions',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${process.env.BEEHIIV_API_KEY}`,
-        },
-        body: JSON.stringify({
-          email,
-          first_name: firstName || '',
-          reactivate_existing: true,
-          send_welcome_email: true,
-        }),
-      }
-    )
-    const data = await response.json()
+    const response = await fetch('https://api.brevo.com/v3/contacts', {
+      method: 'POST',
+      headers: {
+        'accept': 'application/json',
+        'Content-Type': 'application/json',
+        'api-key': process.env.BREVO_API_KEY,
+      },
+      body: JSON.stringify({
+        email,
+        attributes: firstName ? { FIRSTNAME: firstName } : undefined,
+        listIds: [3],
+        updateEnabled: true, // adds existing contacts to the list instead of erroring
+      }),
+    })
+
+    // Brevo returns 201 (created) or 204 (updated) on success.
     if (!response.ok) {
+      const data = await response.json().catch(() => ({}))
       return res.status(response.status).json({ error: data.message || 'Subscription failed' })
     }
     return res.status(200).json({ success: true })
